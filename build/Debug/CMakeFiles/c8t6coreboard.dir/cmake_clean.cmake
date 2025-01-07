@@ -61,6 +61,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.obj.d"
   "CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.obj"
   "c8t6coreboard.elf"
+  "c8t6coreboard.elf.manifest"
   "c8t6coreboard.pdb"
 )
 

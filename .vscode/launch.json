@@ -11,16 +11,17 @@
             "name": "Debug with JLink",
             "request": "launch",
             "type": "cortex-debug",
-            "device": "STM32F103C8",
-            "interface": "swd",
+            // "device": "STM32F103C8",
+            // "interface": "swd",
             "liveWatch": {
                 "enabled": true,
                 "samplesPerSecond": 4
             },
             // "runToEntryPoint": "main",
-            // "showDevDebugOutput": "none",
-            "servertype": "jlink",
-            "svdFile": "/opt/st/stm32cubeide_1.17.0/plugins/com.st.stm32cube.ide.mcu.productdb.debug_2.2.0.202411061604/resources/cmsis/STMicroelectronics_CMSIS_SVD/STM32F103.svd",
+            "showDevDebugOutput": "parsed",
+            "servertype": "external",
+            "gdbTarget": "127.0.0.1:2331",
+            //"svdFile": "/opt/st/stm32cubeide_1.17.0/plugins/com.st.stm32cube.ide.mcu.productdb.debug_2.2.0.202411061604/resources/cmsis/STMicroelectronics_CMSIS_SVD/STM32F103.svd",
         }
     ]
 }
