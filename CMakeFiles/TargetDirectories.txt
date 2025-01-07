@@ -1,0 +1,5 @@
+/home/zwb/c8t6coreboard/CMakeFiles/c8t6coreboard.dir
+/home/zwb/c8t6coreboard/CMakeFiles/edit_cache.dir
+/home/zwb/c8t6coreboard/CMakeFiles/rebuild_cache.dir
+/home/zwb/c8t6coreboard/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/home/zwb/c8t6coreboard/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
