@@ -48,27 +48,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "D:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "D:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:/stm32learn
+CMAKE_SOURCE_DIR = /home/zwb/stm32learn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:/stm32learn/build/Debug
+CMAKE_BINARY_DIR = /home/zwb/stm32learn/build/Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	"D:/Program Files/CMake/bin/cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"D:/Program Files/CMake/bin/cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/stm32learn/build/Debug/CMakeFiles D:/stm32learn/build/Debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zwb/stm32learn/build/Debug/CMakeFiles /home/zwb/stm32learn/build/Debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/stm32learn/build/Debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zwb/stm32learn/build/Debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,54 @@ c8t6coreboard: cmake_check_build_system
 c8t6coreboard/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c8t6coreboard.dir/build.make CMakeFiles/c8t6coreboard.dir/build
 .PHONY : c8t6coreboard/fast
+
+Core/Src/acd10.obj: Core/Src/acd10.cpp.obj
+.PHONY : Core/Src/acd10.obj
+
+# target to build an object file
+Core/Src/acd10.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c8t6coreboard.dir/build.make CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.obj
+.PHONY : Core/Src/acd10.cpp.obj
+
+Core/Src/acd10.i: Core/Src/acd10.cpp.i
+.PHONY : Core/Src/acd10.i
+
+# target to preprocess a source file
+Core/Src/acd10.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c8t6coreboard.dir/build.make CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.i
+.PHONY : Core/Src/acd10.cpp.i
+
+Core/Src/acd10.s: Core/Src/acd10.cpp.s
+.PHONY : Core/Src/acd10.s
+
+# target to generate assembly for a file
+Core/Src/acd10.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c8t6coreboard.dir/build.make CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.s
+.PHONY : Core/Src/acd10.cpp.s
+
+Core/Src/ags10.obj: Core/Src/ags10.cpp.obj
+.PHONY : Core/Src/ags10.obj
+
+# target to build an object file
+Core/Src/ags10.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c8t6coreboard.dir/build.make CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.obj
+.PHONY : Core/Src/ags10.cpp.obj
+
+Core/Src/ags10.i: Core/Src/ags10.cpp.i
+.PHONY : Core/Src/ags10.i
+
+# target to preprocess a source file
+Core/Src/ags10.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c8t6coreboard.dir/build.make CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.i
+.PHONY : Core/Src/ags10.cpp.i
+
+Core/Src/ags10.s: Core/Src/ags10.cpp.s
+.PHONY : Core/Src/ags10.s
+
+# target to generate assembly for a file
+Core/Src/ags10.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c8t6coreboard.dir/build.make CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.s
+.PHONY : Core/Src/ags10.cpp.s
 
 Core/Src/aht20.obj: Core/Src/aht20.cpp.obj
 .PHONY : Core/Src/aht20.obj
@@ -866,6 +914,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... c8t6coreboard"
+	@echo "... Core/Src/acd10.obj"
+	@echo "... Core/Src/acd10.i"
+	@echo "... Core/Src/acd10.s"
+	@echo "... Core/Src/ags10.obj"
+	@echo "... Core/Src/ags10.i"
+	@echo "... Core/Src/ags10.s"
 	@echo "... Core/Src/aht20.obj"
 	@echo "... Core/Src/aht20.i"
 	@echo "... Core/Src/aht20.s"

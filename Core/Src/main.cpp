@@ -21,6 +21,8 @@
 #include "usb_device.h"
 #include "usbd_cdc_if.h"
 #include "aht20.h"
+#include "acd10.h"
+#include "ags10.h"
 
 
 /* Private includes ----------------------------------------------------------*/
@@ -123,6 +125,8 @@ int main(void)
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
   AHT20 aht20(&hi2c1);
+  ACD10 acd10(&hi2c1);
+  AGS10 ags10(&hi2c1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -133,44 +137,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    HAL_Delay(2000);
-    uint8_t data[2];
-    data[0] = 0x03;
-    data[1] = 0x00;
-    uint8_t receive[9];
+    HAL_Delay(5000);
     HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin,GPIO_PIN_RESET);
 
-    HAL_I2C_Master_Transmit(&hi2c1,0x54,data,2,0xFF);
-
-	HAL_I2C_Master_Receive(&hi2c1,0x54,receive,9,0xFF);
-
-	co2 = receive[0];
-	co2 <<= 8;
-	co2 |= receive[1];
-	co2 <<= 8;
-	co2 |= receive[3];
-	co2 <<= 8;
-	co2 |= receive[4];
-	uint16_t temperature = receive[6] << 8 | receive[7];
-	temperature = (temperature - 3200) / 1.8;
-
-
-//	data[0] = 0x00;
-//	status = HAL_I2C_Master_Transmit(&hi2c1,0x34,data,1,0xFF);
-
-	HAL_I2C_Master_Receive(&hi2c1,0x34,receive,5,0xFF);
-
-	uint8_t tvocReady = (receive[0] & 1) == 0;
 	
-	if(tvocReady){
-		tvoc = receive[1];
-		tvoc <<=8;
-		tvoc |= receive[2];
-		tvoc <<=8;
-		tvoc |= receive[3];
-	}
-	
-  aht20.Read(&temp,&humid);
+
 
   uint8_t mpptData[6];
   mpptData[0] = 0xAA;
@@ -182,9 +153,9 @@ int main(void)
   mpptData[4] = crc;
   mpptData[5] = 0x55;
 
-
-//	int t1 = temperature / 100;
-//	int t2 = (temperature - t1) * 100;
+  aht20.Read(&temp,&humid);
+  co2 = acd10.Read();
+  tvoc = ags10.Read();
 
 	int v1 = tvoc / 1000;
 	int v2 = (tvoc - v1 * 1000) / 10;
@@ -208,7 +179,6 @@ int main(void)
 	CDC_Transmit_FS(uBuf, len);
 
 	HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin,GPIO_PIN_SET);
-  //HAL_GPIO_WritePin(RELAY_GPIO_Port, RELAY1_Pin,GPIO_PIN_RESET);
   }
   /* USER CODE END 3 */
 }

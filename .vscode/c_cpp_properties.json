@@ -8,7 +8,7 @@
             "defines": [
                 "STM32F103xB"  
             ],
-            "compilerPath": "D:\\ST\\STM32CubeIDE_1.16.1\\STM32CubeIDE\\plugins\\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\\tools\\bin\\arm-none-eabi-gcc",
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-arm"

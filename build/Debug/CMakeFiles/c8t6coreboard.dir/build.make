@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "D:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "D:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:/stm32learn
+CMAKE_SOURCE_DIR = /home/zwb/stm32learn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:/stm32learn/build/Debug
+CMAKE_BINARY_DIR = /home/zwb/stm32learn/build/Debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/c8t6coreboard.dir/depend.make
@@ -73,442 +73,472 @@ CMakeFiles/c8t6coreboard.dir/codegen:
 .PHONY : CMakeFiles/c8t6coreboard.dir/codegen
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj: D:/stm32learn/Core/Src/main.cpp
+CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj: /home/zwb/stm32learn/Core/Src/main.cpp
 CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj -c D:/stm32learn/Core/Src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj -c /home/zwb/stm32learn/Core/Src/main.cpp
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/stm32learn/Core/Src/main.cpp > CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zwb/stm32learn/Core/Src/main.cpp > CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.i
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/stm32learn/Core/Src/main.cpp -o CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zwb/stm32learn/Core/Src/main.cpp -o CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.s
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj: D:/stm32learn/Core/Src/aht20.cpp
+CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj: /home/zwb/stm32learn/Core/Src/aht20.cpp
 CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj -c D:/stm32learn/Core/Src/aht20.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj -c /home/zwb/stm32learn/Core/Src/aht20.cpp
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/stm32learn/Core/Src/aht20.cpp > CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zwb/stm32learn/Core/Src/aht20.cpp > CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.i
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/stm32learn/Core/Src/aht20.cpp -o CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zwb/stm32learn/Core/Src/aht20.cpp -o CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.s
+
+CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.obj: CMakeFiles/c8t6coreboard.dir/flags.make
+CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.obj: /home/zwb/stm32learn/Core/Src/ags10.cpp
+CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.obj -c /home/zwb/stm32learn/Core/Src/ags10.cpp
+
+CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zwb/stm32learn/Core/Src/ags10.cpp > CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.i
+
+CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zwb/stm32learn/Core/Src/ags10.cpp -o CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.s
+
+CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.obj: CMakeFiles/c8t6coreboard.dir/flags.make
+CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.obj: /home/zwb/stm32learn/Core/Src/acd10.cpp
+CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.obj -c /home/zwb/stm32learn/Core/Src/acd10.cpp
+
+CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zwb/stm32learn/Core/Src/acd10.cpp > CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.i
+
+CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zwb/stm32learn/Core/Src/acd10.cpp -o CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.s
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj: D:/stm32learn/Core/Src/stm32f1xx_it.c
+CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj: /home/zwb/stm32learn/Core/Src/stm32f1xx_it.c
 CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj -c D:/stm32learn/Core/Src/stm32f1xx_it.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj -c /home/zwb/stm32learn/Core/Src/stm32f1xx_it.c
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Core/Src/stm32f1xx_it.c > CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Core/Src/stm32f1xx_it.c > CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.i
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Core/Src/stm32f1xx_it.c -o CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Core/Src/stm32f1xx_it.c -o CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.s
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj: D:/stm32learn/Core/Src/stm32f1xx_hal_msp.c
+CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj: /home/zwb/stm32learn/Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj -c D:/stm32learn/Core/Src/stm32f1xx_hal_msp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj -c /home/zwb/stm32learn/Core/Src/stm32f1xx_hal_msp.c
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Core/Src/stm32f1xx_hal_msp.c > CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Core/Src/stm32f1xx_hal_msp.c > CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.i
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Core/Src/stm32f1xx_hal_msp.c -o CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Core/Src/stm32f1xx_hal_msp.c -o CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.s
 
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj: D:/stm32learn/USB_DEVICE/App/usb_device.c
+CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj: /home/zwb/stm32learn/USB_DEVICE/App/usb_device.c
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj -MF CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj.d -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj -c D:/stm32learn/USB_DEVICE/App/usb_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj -MF CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj.d -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj -c /home/zwb/stm32learn/USB_DEVICE/App/usb_device.c
 
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/USB_DEVICE/App/usb_device.c > CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/USB_DEVICE/App/usb_device.c > CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.i
 
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/USB_DEVICE/App/usb_device.c -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/USB_DEVICE/App/usb_device.c -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.s
 
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.obj: D:/stm32learn/USB_DEVICE/App/usbd_desc.c
+CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.obj: /home/zwb/stm32learn/USB_DEVICE/App/usbd_desc.c
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.obj -MF CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.obj.d -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.obj -c D:/stm32learn/USB_DEVICE/App/usbd_desc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.obj -MF CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.obj.d -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.obj -c /home/zwb/stm32learn/USB_DEVICE/App/usbd_desc.c
 
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/USB_DEVICE/App/usbd_desc.c > CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/USB_DEVICE/App/usbd_desc.c > CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.i
 
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/USB_DEVICE/App/usbd_desc.c -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/USB_DEVICE/App/usbd_desc.c -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_desc.c.s
 
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: D:/stm32learn/USB_DEVICE/App/usbd_cdc_if.c
+CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: /home/zwb/stm32learn/USB_DEVICE/App/usbd_cdc_if.c
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.obj -MF CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.obj.d -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.obj -c D:/stm32learn/USB_DEVICE/App/usbd_cdc_if.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.obj -MF CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.obj.d -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.obj -c /home/zwb/stm32learn/USB_DEVICE/App/usbd_cdc_if.c
 
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/USB_DEVICE/App/usbd_cdc_if.c > CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/USB_DEVICE/App/usbd_cdc_if.c > CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.i
 
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/USB_DEVICE/App/usbd_cdc_if.c -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/USB_DEVICE/App/usbd_cdc_if.c -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usbd_cdc_if.c.s
 
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.obj: D:/stm32learn/USB_DEVICE/Target/usbd_conf.c
+CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.obj: /home/zwb/stm32learn/USB_DEVICE/Target/usbd_conf.c
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.obj -MF CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.obj.d -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.obj -c D:/stm32learn/USB_DEVICE/Target/usbd_conf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.obj -MF CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.obj.d -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.obj -c /home/zwb/stm32learn/USB_DEVICE/Target/usbd_conf.c
 
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/USB_DEVICE/Target/usbd_conf.c > CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/USB_DEVICE/Target/usbd_conf.c > CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.i
 
 CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/USB_DEVICE/Target/usbd_conf.c -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/USB_DEVICE/Target/usbd_conf.c -o CMakeFiles/c8t6coreboard.dir/USB_DEVICE/Target/usbd_conf.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
+CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -c D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -MF CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -c /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c > CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
 
 CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c -o CMakeFiles/c8t6coreboard.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.obj: D:/stm32learn/Core/Src/system_stm32f1xx.c
+CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.obj: /home/zwb/stm32learn/Core/Src/system_stm32f1xx.c
 CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.obj -c D:/stm32learn/Core/Src/system_stm32f1xx.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.obj -c /home/zwb/stm32learn/Core/Src/system_stm32f1xx.c
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Core/Src/system_stm32f1xx.c > CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Core/Src/system_stm32f1xx.c > CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.i
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Core/Src/system_stm32f1xx.c -o CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Core/Src/system_stm32f1xx.c -o CMakeFiles/c8t6coreboard.dir/Core/Src/system_stm32f1xx.c.s
 
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c
+CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj -MF CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj -c D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj -MF CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj -c /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c
 
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c > CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c > CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.i
 
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.s
 
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c
+CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj -MF CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj -c D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj -MF CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj -c /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c
 
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c > CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c > CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.i
 
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.s
 
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c
+CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj -MF CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj -c D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj -MF CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj -c /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c
 
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c > CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c > CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.i
 
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s
 
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj: D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c
+CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj: /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj -MF CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj -c D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj -MF CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj -c /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c
 
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c > CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c > CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.i
 
 CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c -o CMakeFiles/c8t6coreboard.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.s
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.obj: D:/stm32learn/Core/Src/sysmem.c
+CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.obj: /home/zwb/stm32learn/Core/Src/sysmem.c
 CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.obj -c D:/stm32learn/Core/Src/sysmem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.obj -c /home/zwb/stm32learn/Core/Src/sysmem.c
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Core/Src/sysmem.c > CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Core/Src/sysmem.c > CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.i
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Core/Src/sysmem.c -o CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Core/Src/sysmem.c -o CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.s
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.obj: D:/stm32learn/Core/Src/syscalls.c
+CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.obj: /home/zwb/stm32learn/Core/Src/syscalls.c
 CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.obj: CMakeFiles/c8t6coreboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.obj -c D:/stm32learn/Core/Src/syscalls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.obj -MF CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.obj.d -o CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.obj -c /home/zwb/stm32learn/Core/Src/syscalls.c
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/stm32learn/Core/Src/syscalls.c > CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zwb/stm32learn/Core/Src/syscalls.c > CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.i
 
 CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/stm32learn/Core/Src/syscalls.c -o CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zwb/stm32learn/Core/Src/syscalls.c -o CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.s
 
 CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.obj: CMakeFiles/c8t6coreboard.dir/flags.make
-CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.obj: D:/stm32learn/startup_stm32f103xb.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.obj"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.obj -c D:/stm32learn/startup_stm32f103xb.s
+CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.obj: /home/zwb/stm32learn/startup_stm32f103xb.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building ASM object CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.obj -c /home/zwb/stm32learn/startup_stm32f103xb.s
 
 CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.i"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E D:/stm32learn/startup_stm32f103xb.s > CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.i
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/zwb/stm32learn/startup_stm32f103xb.s > CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.i
 
 CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.s"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S D:/stm32learn/startup_stm32f103xb.s -o CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.s
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/zwb/stm32learn/startup_stm32f103xb.s -o CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.s
 
 # Object files for target c8t6coreboard
 c8t6coreboard_OBJECTS = \
 "CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj" \
 "CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj" \
+"CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.obj" \
+"CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.obj" \
 "CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj" \
 "CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj" \
 "CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj" \
@@ -544,6 +574,8 @@ c8t6coreboard_EXTERNAL_OBJECTS =
 
 c8t6coreboard.elf: CMakeFiles/c8t6coreboard.dir/Core/Src/main.cpp.obj
 c8t6coreboard.elf: CMakeFiles/c8t6coreboard.dir/Core/Src/aht20.cpp.obj
+c8t6coreboard.elf: CMakeFiles/c8t6coreboard.dir/Core/Src/ags10.cpp.obj
+c8t6coreboard.elf: CMakeFiles/c8t6coreboard.dir/Core/Src/acd10.cpp.obj
 c8t6coreboard.elf: CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_it.c.obj
 c8t6coreboard.elf: CMakeFiles/c8t6coreboard.dir/Core/Src/stm32f1xx_hal_msp.c.obj
 c8t6coreboard.elf: CMakeFiles/c8t6coreboard.dir/USB_DEVICE/App/usb_device.c.obj
@@ -574,8 +606,9 @@ c8t6coreboard.elf: CMakeFiles/c8t6coreboard.dir/Core/Src/sysmem.c.obj
 c8t6coreboard.elf: CMakeFiles/c8t6coreboard.dir/Core/Src/syscalls.c.obj
 c8t6coreboard.elf: CMakeFiles/c8t6coreboard.dir/startup_stm32f103xb.s.obj
 c8t6coreboard.elf: CMakeFiles/c8t6coreboard.dir/build.make
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable c8t6coreboard.elf"
-	D:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-g++.exe  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g -mcpu=cortex-m3  -T "D:/stm32learn/stm32f103c8tx_flash.ld" --specs=nano.specs -Wl,-Map=c8t6coreboard.map -Wl,--gc-sections -Wl,--start-group -lc -lm -Wl,--end-group -Wl,--print-memory-usage -Wl,--start-group -lstdc++ -lsupc++ -Wl,--end-group $(c8t6coreboard_OBJECTS) $(c8t6coreboard_EXTERNAL_OBJECTS) -o c8t6coreboard.elf
+c8t6coreboard.elf: CMakeFiles/c8t6coreboard.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zwb/stm32learn/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable c8t6coreboard.elf"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/c8t6coreboard.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 CMakeFiles/c8t6coreboard.dir/build: c8t6coreboard.elf
@@ -586,6 +619,6 @@ CMakeFiles/c8t6coreboard.dir/clean:
 .PHONY : CMakeFiles/c8t6coreboard.dir/clean
 
 CMakeFiles/c8t6coreboard.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" D:/stm32learn D:/stm32learn D:/stm32learn/build/Debug D:/stm32learn/build/Debug D:/stm32learn/build/Debug/CMakeFiles/c8t6coreboard.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/zwb/stm32learn/build/Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zwb/stm32learn /home/zwb/stm32learn /home/zwb/stm32learn/build/Debug /home/zwb/stm32learn/build/Debug /home/zwb/stm32learn/build/Debug/CMakeFiles/c8t6coreboard.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/c8t6coreboard.dir/depend
 
