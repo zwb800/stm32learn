@@ -5,7 +5,8 @@
         "stm32f1xx_hal_conf.h": "c",
         "stm32f1xx_hal_rcc.h": "c",
         "cstdint": "cpp",
-        "usb_device.h": "c"
+        "usb_device.h": "c",
+        "i2c.h": "c"
     },
     "cortex-debug.variableUseNaturalFormat": false
 }

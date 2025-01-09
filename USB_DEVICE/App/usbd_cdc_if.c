@@ -264,28 +264,28 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
   if(*Len == 1){
     char c = Buf[0];
     if(c == '1'){
-      HAL_GPIO_WritePin(RELAY_GPIO_Port, RELAY1_Pin,GPIO_PIN_SET);
+      HAL_GPIO_WritePin(RELAY0_GPIO_Port, RELAY0_Pin,GPIO_PIN_SET);
     }
     else if(c == '2'){
-      HAL_GPIO_WritePin(RELAY_GPIO_Port, RELAY2_Pin,GPIO_PIN_SET);
+      HAL_GPIO_WritePin(RELAY1_GPIO_Port, RELAY1_Pin,GPIO_PIN_SET);
     }
     else if(c == '3'){
-      HAL_GPIO_WritePin(RELAY_GPIO_Port, RELAY3_Pin,GPIO_PIN_SET);
+      HAL_GPIO_WritePin(RELAY2_GPIO_Port, RELAY2_Pin,GPIO_PIN_SET);
     }
     else if(c == '4'){
-      HAL_GPIO_WritePin(RELAY_GPIO_Port, RELAY4_Pin,GPIO_PIN_SET);
+      HAL_GPIO_WritePin(RELAY3_GPIO_Port, RELAY3_Pin,GPIO_PIN_SET);
     }
     else if(c == '5'){
-      HAL_GPIO_WritePin(RELAY_GPIO_Port, RELAY1_Pin,GPIO_PIN_RESET);
+      HAL_GPIO_WritePin(RELAY0_GPIO_Port, RELAY0_Pin,GPIO_PIN_RESET);
     }
     else if(c == '6'){
-      HAL_GPIO_WritePin(RELAY_GPIO_Port, RELAY2_Pin,GPIO_PIN_RESET);
+      HAL_GPIO_WritePin(RELAY1_GPIO_Port, RELAY1_Pin,GPIO_PIN_RESET);
     }
     else if(c == '7'){
-      HAL_GPIO_WritePin(RELAY_GPIO_Port, RELAY3_Pin,GPIO_PIN_RESET);
+      HAL_GPIO_WritePin(RELAY2_GPIO_Port, RELAY2_Pin,GPIO_PIN_RESET);
     }
     else if(c == '8'){
-      HAL_GPIO_WritePin(RELAY_GPIO_Port, RELAY4_Pin,GPIO_PIN_RESET);
+      HAL_GPIO_WritePin(RELAY3_GPIO_Port, RELAY3_Pin,GPIO_PIN_RESET);
     }
   }
 

@@ -13,9 +13,9 @@ target_compile_definitions(stm32cubemx INTERFACE
 )
 
 target_include_directories(stm32cubemx INTERFACE
+    ../../Core/Inc
     ../../USB_DEVICE/App
     ../../USB_DEVICE/Target
-    ../../Core/Inc
     ../../Drivers/STM32F1xx_HAL_Driver/Inc
     ../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy
     ../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc
@@ -26,6 +26,9 @@ target_include_directories(stm32cubemx INTERFACE
 
 target_sources(stm32cubemx INTERFACE
     ../../Core/Src/main.cpp
+    ../../Core/Src/gpio.c
+    ../../Core/Src/i2c.c
+    ../../Core/Src/usart.c
     ../../Core/Src/aht20.cpp
     ../../Core/Src/ags10.cpp
     ../../Core/Src/acd10.cpp
@@ -50,6 +53,7 @@ target_sources(stm32cubemx INTERFACE
     ../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
     ../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
     ../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
+    ../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
     ../../Core/Src/system_stm32f1xx.c
     ../../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c
     ../../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c
