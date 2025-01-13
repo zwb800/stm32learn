@@ -138,21 +138,17 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    HAL_Delay(5000);
-    HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin,GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin,GPIO_PIN_RESET);
 
-	
+  // uint8_t mpptData[6];
+  // mpptData[0] = 0xAA;
+  // mpptData[1] = 0x01;
+  // mpptData[2] = 0x03;
 
-
-  uint8_t mpptData[6];
-  mpptData[0] = 0xAA;
-  mpptData[1] = 0x01;
-  mpptData[2] = 0x03;
-
-  uint16_t crc = Modbus_Caluation_CRC16(mpptData,3);
-  mpptData[3] = crc>>8;
-  mpptData[4] = crc;
-  mpptData[5] = 0x55;
+  // uint16_t crc = Modbus_Caluation_CRC16(mpptData,3);
+  // mpptData[3] = crc>>8;
+  // mpptData[4] = crc;
+  // mpptData[5] = 0x55;
 
   aht20.Read(&temp,&humid);
   co2 = acd10.Read();
@@ -168,16 +164,51 @@ int main(void)
 	int h2 = (humid - h1) * 100;
 
 	char buf[100];
-	int len = sprintf(buf,"CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%d Humidity:%d.%d%%\n",
+	auto len = sprintf(buf,"CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%d Humidity:%d.%d%%\r\n",
 			co2,v1,v2,te1,te2,h1,h2);
 
-  uint8_t uBuf[100];
-  for (uint8_t i = 0; i < len; i++)
-  {
-    uBuf[i] = buf[i];
-  }
   
-	CDC_Transmit_FS(uBuf, len);
+	CDC_Transmit_FS((uint8_t*)buf, len);
+  HAL_UART_Transmit(&huart3,(uint8_t*)buf,len,0xFF);
+  
+  uint8_t rBuf[1];
+  auto status = HAL_UART_Receive(&huart3,rBuf,1,5000);
+  if(status == HAL_OK){
+    char c = rBuf[0];
+    bool on = true;
+
+    uint16_t pin = 100;
+    if(c >= '5' && c <= '8'){
+      on = false;
+      c -= 4;
+    }
+
+    if(c == '1'){
+      pin = RELAY0_Pin;
+    }
+    else if(c == '2'){
+      pin = RELAY1_Pin;
+    }
+    else if(c == '3'){
+      pin = RELAY2_Pin;
+    }
+    else if(c == '4'){
+      pin = RELAY3_Pin;
+    }
+    
+    if(pin != 100){
+        char sBuf[100];
+        uint8_t s = sprintf(sBuf, "Switch %c %s\r\n",c,on?"ON":"OFF");
+        HAL_UART_Transmit(&huart3,(uint8_t*)sBuf,s,0xFF);
+
+        HAL_GPIO_WritePin(RELAY0_GPIO_Port, RELAY0_Pin,on? GPIO_PIN_SET:GPIO_PIN_RESET);
+    }
+    else{
+      auto errTxt = "unknow command\r\n";
+      HAL_UART_Transmit(&huart3,(uint8_t*)errTxt,strlen(errTxt),0xFF);
+      HAL_Delay(5000);
+    }
+  }
 
 	HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin,GPIO_PIN_SET);
   }
