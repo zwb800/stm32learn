@@ -26,6 +26,7 @@
 #include "aht20.h"
 #include "acd10.h"
 #include "ags10.h"
+#include "relay.h"
 
 
 /* Private includes ----------------------------------------------------------*/
@@ -62,33 +63,17 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
-#define AHT_ADDR	0x38<<1
-
-uint16_t Modbus_Caluation_CRC16(uint8_t *Buff, uint8_t nSize)
-{
-       uint16_t m_Crc;
-       uint16_t m_InitCrc = 0xffff;
-       uint8_t i,j;
-       //u8 lCrcBuff,hCrcBuff;
-       for(i=0; i<nSize; i++)
-       {
-              m_InitCrc ^= Buff[i];
-              for(j=0; j<8; j++)
-              {
-                     m_Crc = m_InitCrc;
-                     m_InitCrc >>= 1;
-                     if(m_Crc&0x0001)
-                            m_InitCrc ^= 0xa001;
-              }
-       }
-       return m_InitCrc;
-}
-
 int co2;
 int tvoc = -1;
 float temp,humid;
+uint8_t rxBuf[1];
+Relay relay((char*)rxBuf);
 
+
+void RxCallback(UART_HandleTypeDef* huart){
+  relay.Process();
+  HAL_UART_Receive_IT(huart,rxBuf,1);
+}
 
 /* USER CODE END 0 */
 
@@ -129,8 +114,9 @@ int main(void)
   ACD10 acd10(&hi2c1);
   AGS10 ags10(&hi2c1);
 
-  uint8_t rxBuf[1];
-  // HAL_UART_Receive_IT(&huart3,rxBuf,1);
+  
+  HAL_UART_Receive_IT(&huart3,rxBuf,1);
+  HAL_UART_RegisterCallback(&huart3,HAL_UART_RX_COMPLETE_CB_ID,RxCallback);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -141,78 +127,40 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin,GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin,GPIO_PIN_RESET);
 
-  // uint8_t mpptData[6];
-  // mpptData[0] = 0xAA;
-  // mpptData[1] = 0x01;
-  // mpptData[2] = 0x03;
+    // uint8_t mpptData[6];
+    // mpptData[0] = 0xAA;
+    // mpptData[1] = 0x01;
+    // mpptData[2] = 0x03;
 
-  // uint16_t crc = Modbus_Caluation_CRC16(mpptData,3);
-  // mpptData[3] = crc>>8;
-  // mpptData[4] = crc;
-  // mpptData[5] = 0x55;
+    // uint16_t crc = Modbus_Caluation_CRC16(mpptData,3);
+    // mpptData[3] = crc>>8;
+    // mpptData[4] = crc;
+    // mpptData[5] = 0x55;
 
-  aht20.Read(&temp,&humid);
-  co2 = acd10.Read();
-  tvoc = ags10.Read();
+    aht20.Read(&temp,&humid);
+    co2 = acd10.Read();
+    tvoc = ags10.Read();
 
-	int v1 = tvoc / 1000;
-	int v2 = (tvoc - v1 * 1000) / 10;
+    int v1 = tvoc / 1000;
+    int v2 = (tvoc - v1 * 1000) / 10;
 
-	int te1 = temp;
-	int te2 = (temp - te1) * 100;
+    int te1 = temp;
+    int te2 = (temp - te1) * 100;
 
-	int h1 = humid;
-	int h2 = (humid - h1) * 100;
+    int h1 = humid;
+    int h2 = (humid - h1) * 100;
 
-	char buf[100];
-	auto len = sprintf(buf,"CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%d Humidity:%d.%d%%\r\n",
-			co2,v1,v2,te1,te2,h1,h2);
+    char buf[100];
+    auto len = sprintf(buf,"CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%d Humidity:%d.%d%%\r\n",
+        co2,v1,v2,te1,te2,h1,h2);
 
-  
-	CDC_Transmit_FS((uint8_t*)buf, len);
-  HAL_UART_Transmit(&huart3,(uint8_t*)buf,len,0xFF);
-  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin,GPIO_PIN_SET);
-
-  uint8_t rBuf[1];
-  auto status = HAL_UART_Receive(&huart3,rBuf,1,5000);
-  if(status == HAL_OK){
-    char c = rBuf[0];
-    bool on = true;
-
-    uint16_t pin = 100;
-    if(c >= '5' && c <= '8'){
-      on = false;
-      c -= 4;
-    }
-
-    if(c == '1'){
-      pin = RELAY0_Pin;
-    }
-    else if(c == '2'){
-      pin = RELAY1_Pin;
-    }
-    else if(c == '3'){
-      pin = RELAY2_Pin;
-    }
-    else if(c == '4'){
-      pin = RELAY3_Pin;
-    }
     
-    if(pin != 100){
-        char sBuf[100];
-        uint8_t s = sprintf(sBuf, "Switch %c %s\r\n",c,on?"ON":"OFF");
-        HAL_UART_Transmit(&huart3,(uint8_t*)sBuf,s,0xFF);
-
-        HAL_GPIO_WritePin(RELAY0_GPIO_Port, pin,on? GPIO_PIN_SET:GPIO_PIN_RESET);
-    }
-    else{
-      auto errTxt = "unknow command\r\n";
-      HAL_UART_Transmit(&huart3,(uint8_t*)errTxt,strlen(errTxt),0xFF);
-      HAL_Delay(5000);
-    }
-  }
+    CDC_Transmit_FS((uint8_t*)buf, len);
+    HAL_UART_Transmit_IT(&huart3,(uint8_t*)buf,len);
+    HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin,GPIO_PIN_SET);
+    HAL_Delay(5000);
 
   }
   /* USER CODE END 3 */
