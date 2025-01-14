@@ -1,6 +1,6 @@
 #include "aht20.h"
 
-AHT20::AHT20(I2C_HandleTypeDef* i){
+void AHT20::SetI2C(I2C_HandleTypeDef* i){
 	i2c = i;
 }
 

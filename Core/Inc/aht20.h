@@ -5,7 +5,7 @@ class AHT20 {
     private:
         I2C_HandleTypeDef* i2c;
     public:
-        AHT20(I2C_HandleTypeDef* i2c);
+        void SetI2C(I2C_HandleTypeDef* i2c);
         void Read(float* Temp,float* Humid);
 
 };

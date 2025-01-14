@@ -25,10 +25,11 @@ target_include_directories(stm32cubemx INTERFACE
 )
 
 target_sources(stm32cubemx INTERFACE
-    ../../Core/Src/main.cpp
+    ../../Core/Src/main.c
     ../../Core/Src/gpio.c
     ../../Core/Src/i2c.c
     ../../Core/Src/usart.c
+    ../../Core/Src/arduino.cpp
     ../../Core/Src/aht20.cpp
     ../../Core/Src/ags10.cpp
     ../../Core/Src/acd10.cpp

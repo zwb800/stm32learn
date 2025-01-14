@@ -5,6 +5,6 @@ class AGS10 {
     private:
         I2C_HandleTypeDef* i2c;
     public:
-        AGS10(I2C_HandleTypeDef*);
+        void SetI2C(I2C_HandleTypeDef*);
         int Read();
 };

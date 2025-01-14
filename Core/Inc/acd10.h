@@ -5,6 +5,6 @@ class ACD10 {
     private:
         I2C_HandleTypeDef* i2c;
     public:
-        ACD10(I2C_HandleTypeDef* i2c);
+        void SetI2C(I2C_HandleTypeDef* i2c);
         int Read();
 };

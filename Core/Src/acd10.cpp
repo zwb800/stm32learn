@@ -1,6 +1,6 @@
 #include "acd10.h"
 
-ACD10::ACD10(I2C_HandleTypeDef* i){
+void ACD10::SetI2C(I2C_HandleTypeDef* i){
     i2c = i;
 }
 

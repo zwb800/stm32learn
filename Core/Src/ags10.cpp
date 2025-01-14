@@ -1,6 +1,6 @@
 #include "ags10.h"
 
-AGS10::AGS10(I2C_HandleTypeDef* i){
+void AGS10::SetI2C(I2C_HandleTypeDef* i){
     i2c = i;
 }
 
