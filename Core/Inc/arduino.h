@@ -7,6 +7,8 @@ extern "C"
 void setup();
 void loop();
 
+void Read();
+
 #ifdef __cplusplus
 }
 #endif
