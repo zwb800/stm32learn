@@ -128,6 +128,9 @@ int main(void)
   AHT20 aht20(&hi2c1);
   ACD10 acd10(&hi2c1);
   AGS10 ags10(&hi2c1);
+
+  uint8_t rxBuf[1];
+  // HAL_UART_Receive_IT(&huart3,rxBuf,1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -170,7 +173,8 @@ int main(void)
   
 	CDC_Transmit_FS((uint8_t*)buf, len);
   HAL_UART_Transmit(&huart3,(uint8_t*)buf,len,0xFF);
-  
+  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin,GPIO_PIN_SET);
+
   uint8_t rBuf[1];
   auto status = HAL_UART_Receive(&huart3,rBuf,1,5000);
   if(status == HAL_OK){
@@ -201,7 +205,7 @@ int main(void)
         uint8_t s = sprintf(sBuf, "Switch %c %s\r\n",c,on?"ON":"OFF");
         HAL_UART_Transmit(&huart3,(uint8_t*)sBuf,s,0xFF);
 
-        HAL_GPIO_WritePin(RELAY0_GPIO_Port, RELAY0_Pin,on? GPIO_PIN_SET:GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(RELAY0_GPIO_Port, pin,on? GPIO_PIN_SET:GPIO_PIN_RESET);
     }
     else{
       auto errTxt = "unknow command\r\n";
@@ -210,7 +214,6 @@ int main(void)
     }
   }
 
-	HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin,GPIO_PIN_SET);
   }
   /* USER CODE END 3 */
 }
