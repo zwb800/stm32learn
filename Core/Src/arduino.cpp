@@ -40,6 +40,7 @@ extern "C"{
         HAL_UART_Receive_IT(&huart3,rxBuf,1);
 
         HAL_TIM_RegisterCallback(&htim1,HAL_TIM_PERIOD_ELAPSED_CB_ID,TIMCallback);
+        HAL_TIM_Base_Start_IT(&htim1);
     }
 
     void loop(){
