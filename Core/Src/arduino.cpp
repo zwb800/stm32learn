@@ -29,7 +29,8 @@ extern "C"{
     }
 
     void TIMCallback(TIM_HandleTypeDef* tim){
-        Read();
+        if(tim == &htim1)
+            Read();
     }
 
     void setup(){
@@ -64,8 +65,11 @@ extern "C"{
         int h2 = (humid - h1) * 100;
 
         char buf[100];
-        auto len = sprintf(buf, "CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%d Humidity:%d.%d%%\r\n",
-                           co2, v1, v2, te1, te2, h1, h2);
+        auto len = sprintf(buf, "CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%d Humidity:%d.%d%% %s:%s:%s \r\n",
+                           co2, v1, v2, te1, te2, h1, h2,
+                           relay.State(RELAY0_Pin)?"ON":"OFF",
+                           relay.State(RELAY1_Pin)?"ON":"OFF",
+                           relay.State(RELAY2_Pin)?"ON":"OFF");
 
         HAL_UART_Transmit_IT(&huart3, (uint8_t *)buf, len);
         HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
