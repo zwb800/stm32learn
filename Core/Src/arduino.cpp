@@ -9,6 +9,7 @@
 #include "relay.h"
 #include <stdio.h>
 #include "tim.h"
+#include "adc.h"
 
 
 extern "C"{
@@ -16,6 +17,7 @@ extern "C"{
     int co2;
     int tvoc = -1;
     float temp,humid;
+    uint32_t voltage;
     uint8_t rxBuf[1];
     Relay relay((char*)rxBuf);
     AHT20 aht20;
@@ -51,6 +53,11 @@ extern "C"{
     void Read()
     {
         HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
+
+        HAL_ADC_Start(&hadc1);
+        HAL_ADC_PollForConversion(&hadc1,10);
+        voltage = HAL_ADC_GetValue(&hadc1);
+
         aht20.Read(&temp, &humid);
         co2 = acd10.Read();
         tvoc = ags10.Read();

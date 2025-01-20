@@ -66,6 +66,8 @@ void Error_Handler(void);
 #define RELAY1_GPIO_Port GPIOA
 #define RELAY0_Pin GPIO_PIN_3
 #define RELAY0_GPIO_Port GPIOA
+#define Voltage_Pin GPIO_PIN_5
+#define Voltage_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 
