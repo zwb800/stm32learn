@@ -13,9 +13,14 @@
 
 #define ADC_MAX 4095.0 //12bit adc
 #define ADC_MAX_VOLTAGE 3.3
-#define R1 20000
-#define R2 2000
+#define R1 20100
+#define R2 1990
 #define MODULE_TIMES (R1+R2)/R2
+
+#define CELL_MAX 13.8
+#define CELL_MIN 11.1
+#define CELL 2
+
 
 extern "C"{
 
@@ -23,6 +28,12 @@ extern "C"{
     int tvoc = -1;
     float temp,humid;
     float voltage;
+    int capacity;
+
+    const float BATTERY_MAX = CELL_MAX * CELL;
+    const float BATTERY_MIN = CELL_MIN * CELL;
+    const float BATTERY_RANGE = BATTERY_MAX - BATTERY_MIN;
+
     uint8_t rxBuf[1];
     Relay relay((char*)rxBuf);
     AHT20 aht20;
@@ -80,9 +91,14 @@ extern "C"{
         int h1 = humid;
         int h2 = (humid - h1) * 100;
 
+        int vo1 = voltage;
+        int vo2 = (voltage - vo1) *100;
+
+        capacity = (voltage - BATTERY_MIN) * 100 / BATTERY_RANGE;
+
         char buf[100];
-        auto len = sprintf(buf, "CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%d Humidity:%d.%d%% Battery:%d.%dv %s:%s:%s \r\n",
-                           co2, v1, v2, te1, te2, h1, h2,(int)voltage,(int)(voltage * 10),
+        auto len = sprintf(buf, "CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%d Humidity:%d.%d%% Battery:%d.%dv %d%% %s:%s:%s \r\n",
+                           co2, v1, v2, te1, te2, h1, h2,vo1,vo2,capacity,
                            relay.State(RELAY0_Pin)?"ON":"OFF",
                            relay.State(RELAY1_Pin)?"ON":"OFF",
                            relay.State(RELAY2_Pin)?"ON":"OFF");
