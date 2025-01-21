@@ -40,12 +40,12 @@ void Relay::Process(){
         if(pin != 100){
             char sBuf[100];
             uint8_t s = sprintf(sBuf, "Switch %c %s\r\n",c,on?"ON":"OFF");
-            HAL_UART_Transmit(&huart3,(uint8_t*)sBuf,s,1000);
+            HAL_UART_Transmit(&huart3,(uint8_t*)sBuf,s,100);
 
             HAL_GPIO_WritePin(RELAY0_GPIO_Port, pin,on? GPIO_PIN_SET:GPIO_PIN_RESET);
         }
         else{
             auto errTxt = "unknow command\r\n";
-            HAL_UART_Transmit(&huart3,(uint8_t*)errTxt,strlen(errTxt),1000);
+            HAL_UART_Transmit(&huart3,(uint8_t*)errTxt,strlen(errTxt),100);
         }
 }

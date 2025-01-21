@@ -11,18 +11,25 @@
 #include "tim.h"
 #include "adc.h"
 
+#define ADC_MAX 4095.0 //12bit adc
+#define ADC_MAX_VOLTAGE 3.3
+#define R1 20000
+#define R2 2000
+#define MODULE_TIMES (R1+R2)/R2
 
 extern "C"{
 
     int co2;
     int tvoc = -1;
     float temp,humid;
-    uint32_t voltage;
+    float voltage;
     uint8_t rxBuf[1];
     Relay relay((char*)rxBuf);
     AHT20 aht20;
     ACD10 acd10;
     AGS10 ags10;
+
+    
 
 
     void RxCallback(UART_HandleTypeDef* huart){
@@ -31,8 +38,7 @@ extern "C"{
     }
 
     void TIMCallback(TIM_HandleTypeDef* tim){
-        if(tim == &htim1)
-            Read();
+        Read();
     }
 
     void setup(){
@@ -48,16 +54,19 @@ extern "C"{
 
     void loop(){
         // Read();
-        // HAL_Delay(5000);
-    }
+        // HAL_ADC_Start(&hadc1);
+        // if(HAL_ADC_PollForConversion(&hadc1,100) == HAL_OK){
+        //     voltage = HAL_ADC_GetValue(&hadc1);
+        // }
+        // HAL_Delay(1000);
+    } 
     void Read()
     {
         HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
-
         HAL_ADC_Start(&hadc1);
-        HAL_ADC_PollForConversion(&hadc1,10);
-        voltage = HAL_ADC_GetValue(&hadc1);
-
+        if(HAL_ADC_PollForConversion(&hadc1,100) == HAL_OK){
+            voltage = HAL_ADC_GetValue(&hadc1) * ADC_MAX_VOLTAGE * MODULE_TIMES / ADC_MAX;
+        }
         aht20.Read(&temp, &humid);
         co2 = acd10.Read();
         tvoc = ags10.Read();
@@ -72,8 +81,8 @@ extern "C"{
         int h2 = (humid - h1) * 100;
 
         char buf[100];
-        auto len = sprintf(buf, "CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%d Humidity:%d.%d%% %s:%s:%s \r\n",
-                           co2, v1, v2, te1, te2, h1, h2,
+        auto len = sprintf(buf, "CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%d Humidity:%d.%d%% Battery:%d.%dv %s:%s:%s \r\n",
+                           co2, v1, v2, te1, te2, h1, h2,(int)voltage,(int)(voltage * 10),
                            relay.State(RELAY0_Pin)?"ON":"OFF",
                            relay.State(RELAY1_Pin)?"ON":"OFF",
                            relay.State(RELAY2_Pin)?"ON":"OFF");
