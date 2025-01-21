@@ -97,7 +97,7 @@ extern "C"{
         capacity = (voltage - BATTERY_MIN) * 100 / BATTERY_RANGE;
 
         char buf[100];
-        auto len = sprintf(buf, "CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%d Humidity:%d.%d%% Battery:%d.%dv %d%% %s:%s:%s \r\n",
+        auto len = sprintf(buf, "CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%d Humidity:%d.%-02d%% Battery:%d.%dv %d%% %s:%s:%s \r\n",
                            co2, v1, v2, te1, te2, h1, h2,vo1,vo2,capacity,
                            relay.State(RELAY0_Pin)?"ON":"OFF",
                            relay.State(RELAY1_Pin)?"ON":"OFF",
