@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include "tim.h"
 #include "adc.h"
+#include <stdlib.h>
 
 #define ADC_MAX 4095.0 //12bit adc
 #define ADC_MAX_VOLTAGE 3.3
@@ -39,6 +40,7 @@ extern "C"{
     AHT20 aht20;
     ACD10 acd10;
     AGS10 ags10;
+    uint8_t relayDelay;
 
     
 
@@ -86,7 +88,7 @@ extern "C"{
         int v2 = (tvoc - v1 * 1000) / 10;
 
         int te1 = temp;
-        int te2 = (temp - te1) * 100;
+        int te2 = abs(temp - te1) * 100;
 
         int h1 = humid;
         int h2 = (humid - h1) * 100;
@@ -96,12 +98,32 @@ extern "C"{
 
         capacity = (voltage - BATTERY_MIN) * 100 / BATTERY_RANGE;
 
+        if(relayDelay == 0){
+            if(!relay.State(RELAY1_Pin)){
+                if(capacity > 95)
+                {
+                    relay.TurnOn(RELAY1_Pin);
+                    relayDelay = 2;
+                }
+            }
+            else{
+                if(capacity < 40){
+                    relay.TurnOff(RELAY1_Pin);
+                    relayDelay = 30;
+                }
+            }
+        }
+        else{
+            relayDelay --;
+        }
+
         char buf[100];
-        auto len = sprintf(buf, "CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%02d Humidity:%d.%02d%% Battery:%d.%02dv %d%% %s:%s:%s \r\n",
+        auto len = sprintf(buf, "CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%02d Humidity:%d.%02d%% Battery:%d.%02dv %d%% %s:%s:%s:%s \r\n",
                            co2, v1, v2, te1, te2, h1, h2,vo1,vo2,capacity,
                            relay.State(RELAY0_Pin)?"ON":"OFF",
                            relay.State(RELAY1_Pin)?"ON":"OFF",
-                           relay.State(RELAY2_Pin)?"ON":"OFF");
+                           relay.State(RELAY2_Pin)?"ON":"OFF",
+                           relay.State(RELAY3_Pin)?"ON":"OFF");
 
         HAL_UART_Transmit_IT(&huart3, (uint8_t *)buf, len);
         HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);

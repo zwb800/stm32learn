@@ -13,10 +13,10 @@
             "type": "cortex-debug",
             "device": "STM32F103C8",
             "interface": "swd",
-            "liveWatch": {
-                "enabled": true,
+            // "liveWatch": {
+                // "enabled": true,
                 // "samplesPerSecond": 5
-            },
+            // },
             // "runToEntryPoint": "main",
             // "showDevDebugOutput": "raw",
             "servertype": "jlink",

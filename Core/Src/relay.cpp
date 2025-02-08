@@ -10,7 +10,7 @@ Relay::Relay(char* c){
     chr = c;
 }
 
-bool Relay::State(uint8_t pin){
+bool Relay::State(uint16_t pin){
      return HAL_GPIO_ReadPin(RELAY0_GPIO_Port,pin) == GPIO_PIN_SET;
 }
 
@@ -42,10 +42,23 @@ void Relay::Process(){
             uint8_t s = sprintf(sBuf, "Switch %c %s\r\n",c,on?"ON":"OFF");
             HAL_UART_Transmit(&huart3,(uint8_t*)sBuf,s,100);
 
-            HAL_GPIO_WritePin(RELAY0_GPIO_Port, pin,on? GPIO_PIN_SET:GPIO_PIN_RESET);
+            if(on){
+                TurnOn(pin);
+            }
+            else{
+                TurnOff(pin);
+            }
         }
         else{
             auto errTxt = "unknow command\r\n";
             HAL_UART_Transmit(&huart3,(uint8_t*)errTxt,strlen(errTxt),100);
         }
+}
+
+void Relay::TurnOn(uint16_t pin){
+    HAL_GPIO_WritePin(RELAY0_GPIO_Port, pin,GPIO_PIN_SET);
+}
+
+void Relay::TurnOff(uint16_t pin){
+    HAL_GPIO_WritePin(RELAY0_GPIO_Port, pin,GPIO_PIN_RESET);
 }
