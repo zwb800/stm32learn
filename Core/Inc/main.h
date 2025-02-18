@@ -68,6 +68,8 @@ void Error_Handler(void);
 #define RELAY0_GPIO_Port GPIOA
 #define Voltage_Pin GPIO_PIN_5
 #define Voltage_GPIO_Port GPIOA
+#define WaterHeater_Pin GPIO_PIN_9
+#define WaterHeater_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

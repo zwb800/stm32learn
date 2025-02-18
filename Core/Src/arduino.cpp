@@ -63,6 +63,9 @@ extern "C"{
 
         HAL_TIM_RegisterCallback(&htim1,HAL_TIM_PERIOD_ELAPSED_CB_ID,TIMCallback);
         HAL_TIM_Base_Start_IT(&htim1);
+
+        HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_4);
+        __HAL_TIM_SetCompare(&htim4,TIM_CHANNEL_4,50);
     }
 
     void loop(){
@@ -103,13 +106,13 @@ extern "C"{
                 if(capacity > 95)
                 {
                     relay.TurnOn(RELAY1_Pin);
-                    relayDelay = 2;
+                    relayDelay = 30;
                 }
             }
             else{
                 if(capacity < 40){
                     relay.TurnOff(RELAY1_Pin);
-                    relayDelay = 30;
+                    relayDelay = 300;
                 }
             }
         }
