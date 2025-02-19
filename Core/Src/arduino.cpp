@@ -117,12 +117,18 @@ extern "C"{
         SetWaterHearterPower(pwm);
 
         char buf[100];
-        auto len = sprintf(buf, "CO2:%d ppm TVOC:%d.%d ppm Temp:%d.%02d Hum:%d.%02d%% Battery:%d.%02dv %d%% %s:%s:%s:%s WaterHeater:%d.%02d%%\r\n",
-                           co2, v1, v2, te1, te2, h1, h2,vo1,vo2,capacity,
+        auto len = sprintf(buf, 
+            "CO2:%d ppm TVOC:%d.%d ppm T:%d.%02d H:%d.%02d%% B:%d.%02dv %d%% WH:%d.%02d%% %s:%s:%s:%s \r\n",
+            // "B:%d.%02dv %d%% WaterHeater:%d.%02d%%\r\n",
+                           co2, v1, v2, te1, te2, h1, h2,
+                        vo1,vo2,
+                        capacity,
+                        pwm / 100,pwm - (pwm / 100 * 100),
                            relay.State(RELAY0_Pin)?"ON":"OFF",
                            relay.State(RELAY1_Pin)?"ON":"OFF",
                            relay.State(RELAY2_Pin)?"ON":"OFF",
-                           relay.State(RELAY3_Pin)?"ON":"OFF",pwm / 100,pwm - (pwm / 100 * 100));
+                           relay.State(RELAY3_Pin)?"ON":"OFF"
+                           );
 
         HAL_UART_Transmit_IT(&huart3, (uint8_t *)buf, len);
         HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
