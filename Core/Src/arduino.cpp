@@ -30,6 +30,7 @@ extern "C"{
     float temp,humid;
     float voltage;
     int capacity;
+    float pwm;
 
     const float BATTERY_MAX = CELL_MAX * CELL;
     const float BATTERY_MIN = CELL_MIN * CELL;
@@ -65,7 +66,12 @@ extern "C"{
         HAL_TIM_Base_Start_IT(&htim1);
 
         HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_4);
-        __HAL_TIM_SetCompare(&htim4,TIM_CHANNEL_4,50);
+        SetWaterHearterPower(0);
+    }
+
+    void SetWaterHearterPower(uint32_t pwm)
+    {
+        __HAL_TIM_SetCompare(&htim4, TIM_CHANNEL_4, pwm);
     }
 
     void loop(){
@@ -101,32 +107,24 @@ extern "C"{
 
         capacity = (voltage - BATTERY_MIN) * 100 / BATTERY_RANGE;
 
-        if(relayDelay == 0){
-            if(!relay.State(RELAY1_Pin)){
-                if(capacity > 95)
-                {
-                    relay.TurnOn(RELAY1_Pin);
-                    relayDelay = 30;
-                }
-            }
-            else{
-                if(capacity < 40){
-                    relay.TurnOff(RELAY1_Pin);
-                    relayDelay = 300;
-                }
-            }
-        }
-        else{
-            relayDelay --;
-        }
+        float p = 1;
+
+        pwm += (capacity - 90) * p;
+
+        if(pwm>100)
+            pwm = 100;
+        else if(pwm < 0)
+            pwm = 0;
+
+        SetWaterHearterPower(pwm);
 
         char buf[100];
-        auto len = sprintf(buf, "CO2:%d ppm TVOC:%d.%d ppm Temperature:%d.%02d Humidity:%d.%02d%% Battery:%d.%02dv %d%% %s:%s:%s:%s \r\n",
+        auto len = sprintf(buf, "CO2:%d ppm TVOC:%d.%d ppm Temp:%d.%02d Hum:%d.%02d%% Battery:%d.%02dv %d%% %s:%s:%s:%s WaterHeater:%d%%  \r\n",
                            co2, v1, v2, te1, te2, h1, h2,vo1,vo2,capacity,
                            relay.State(RELAY0_Pin)?"ON":"OFF",
                            relay.State(RELAY1_Pin)?"ON":"OFF",
                            relay.State(RELAY2_Pin)?"ON":"OFF",
-                           relay.State(RELAY3_Pin)?"ON":"OFF");
+                           relay.State(RELAY3_Pin)?"ON":"OFF",(uint8_t)pwm);
 
         HAL_UART_Transmit_IT(&huart3, (uint8_t *)buf, len);
         HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
